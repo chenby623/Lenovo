@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp">
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textSize="16sp">
+            <requestFocus/>
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4"/>
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textColor="#ff1d1d1d"
+            android:textColorHint="#ff666666"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <!--<Button-->
+    <!--android:id="@+id/login_button"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignLeft="@+id/input_layout"-->
+    <!--android:layout_alignRight="@+id/input_layout"-->
+    <!--android:layout_below="@+id/input_layout"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:background="@drawable/login_button_back"-->
+    <!--android:text="登录"/>-->
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_layout"
+        android:layout_marginTop="20dp"
+        android:text="登录"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/regist_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/input_layout"
+        android:gravity="left|center"
+        android:paddingLeft="8dp"
+        android:paddingRight="18dp"
+        android:layout_marginBottom="30dp"
+        android:text="注册新账号"
+        android:textColor="#6A5ACD"
+        android:background="@android:color/transparent"
+        android:textSize="12sp"/>
+
+
+
+</RelativeLayout>

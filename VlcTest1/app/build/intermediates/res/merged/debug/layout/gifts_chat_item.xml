@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorDarkOrange"
+        android:text="name"/>
+
+    <TextView
+        android:id="@+id/send_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorGrey"
+        android:text="送出"/>
+
+    <ImageView
+        android:id="@+id/gift_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_cake_grey600_48dp"/>
+
+    <TextView
+        android:id="@+id/gift_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorDarkOrange"
+        android:text="15"/>
+
+</LinearLayout>
