@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LenovoPusher</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="encountered_error_title">回放错误</string>
+    <!--<string name="encountered_error_message">VLC 播放该媒体时遇到问题。\n请尝试刷新媒体库。</string>-->
+    <string name="encountered_error_message">该主播尚未开始直播</string>
+    <string name="ok">是</string>
+    <string name="video_loading">视频加载中...</string>
+
+    <string name="str_recorder_normal">按住说话</string>
+    <string name="str_recorder_recording">松开结束</string>
+    <string name="str_recorder_want_cancel">松开手指，取消发送</string>
+    <string name="str_slipe_to_cancel">手指上滑，取消发送</string>
+    <string name="str_voice_too_short">录音时间过短</string>
+</resources>

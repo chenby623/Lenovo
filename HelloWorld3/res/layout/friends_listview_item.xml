@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listview_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <!--BottomViews-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:tag="Bottom3"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/permission"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FF8C00"
+            android:text="修改权限"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingLeft="18dp"
+            android:paddingRight="24dp"/>
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FF5534"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingLeft="18dp"
+            android:paddingRight="24dp"/>
+    </LinearLayout>
+
+    <!--SurfaceViews-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <com.example.lenovopusher.view.RoundImageView
+            android:id="@+id/user_head_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/head_icon"  />
+
+        <TextView
+            android:id="@+id/friends_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_head_icon"
+            android:layout_marginLeft="10dp"
+            android:text="lalala"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/friends_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friends_name"
+            android:layout_alignLeft="@+id/friends_name"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/user_head_icon"
+            android:gravity="center_vertical"
+            android:text="好友的简介"/>
+
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>
