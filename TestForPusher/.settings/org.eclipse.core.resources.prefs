@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/com/example/lenovopusher/activity/HomePageActivity.java=UTF-8
+encoding//src/com/example/lenovopusher/activity/LoginActivity.java=UTF-8
+encoding//src/com/example/lenovopusher/adapter/FriendsListAdapter.java=UTF-8
+encoding//src/com/example/lenovopusher/adapter/PublicChatAdapter.java=UTF-8
+encoding//src/com/example/lenovopusher/fragment/FriendsListFragment.java=UTF-8
+encoding//src/com/example/lenovopusher/fragment/PublicChatFragment.java=UTF-8
+encoding//src/com/example/lenovopusher/manager/DialogManager.java=UTF-8
+encoding//src/com/example/lenovopusher/view/AudioRecorderButton.java=UTF-8
+encoding//src/com/example/vlctest/MainActivity.java=UTF-8
+encoding//src/com/example/vlctest/PublicUtils.java=UTF-8
