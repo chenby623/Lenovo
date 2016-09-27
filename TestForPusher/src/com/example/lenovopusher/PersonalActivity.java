@@ -10,6 +10,7 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.MediaController;
 import android.widget.VideoView;
@@ -66,9 +67,10 @@ public class PersonalActivity extends CameraActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().addFlags(LayoutParams.FLAG_KEEP_SCREEN_ON);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_main);
-        ImageButton btn = (ImageButton)findViewById(R.id.take_picture);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //setContentView(R.layout.activity_main);
+        setContentView(R.layout.personal_live_activity);
+        Button btn = (Button)findViewById(R.id.take_picture);
         
         btn.setOnClickListener(new OnClickListener() {
 

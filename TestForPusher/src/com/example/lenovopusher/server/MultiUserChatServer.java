@@ -33,8 +33,8 @@ public class MultiUserChatServer extends Service {
 
 
         roomName=intent.getStringExtra("roomName");
-        roomName="111";
-        roomName= Config.roomName;//下下策
+        //roomName="111";
+        //roomName= Config.roomName;//下下策
 
         XMPPTCPConnection connection= MyConnection.getInstance().getConnection();
 

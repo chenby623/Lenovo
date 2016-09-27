@@ -190,7 +190,7 @@ public class MyConnection {
      * 创建群聊聊天室
      * */
     public MultiUserChat createChatRoom(String roomName, String nickName, String password){
-        Log.e("=============","进入到创建会议的代码里面来了");
+        Log.e("==MyConnection==","进入到创建会议的代码里面来了");
         if(getConnection()==null){
             throw new NullPointerException("服务器连接失败，请先连接服务器");
         }
@@ -198,7 +198,7 @@ public class MyConnection {
         try{
             //创建一个MultiUserChat
             muc= MultiUserChatManager.getInstanceFor(connection).getMultiUserChat(roomName+"@conference."+connection.getServiceName());
-            Log.e("=======创建的语句是========",roomName+"@conference."+connection.getServiceName());
+            Log.e("===MyConnection==创建的语句是===",roomName+"@conference."+connection.getServiceName());
             //创建聊天室
             boolean isCreate=muc.createOrJoin(nickName);
             if(isCreate&&!muc.isJoined()) {

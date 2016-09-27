@@ -52,6 +52,7 @@ public class LoginActivity  extends Activity implements View.OnClickListener{
                             if(MyConnection.getInstance().login(name,password)){
                                 UserInformation.setUsername(name);
                                 Stream.strRemoteName=name+".sdp";
+                                
                                 Intent intent1=new Intent(LoginActivity.this,ClientConServer.class);
                                 startService(intent1);
                                 Intent intent2=new Intent(LoginActivity.this,HomePageActivity.class);

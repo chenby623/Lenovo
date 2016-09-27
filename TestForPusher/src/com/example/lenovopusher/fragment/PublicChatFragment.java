@@ -36,6 +36,7 @@ import com.example.lenovopusher.utils.Config;
 import com.example.lenovopusher.utils.MyConnection;
 import com.example.lenovopusher.utils.UserInformation;
 import com.example.lenovopusher.view.AudioRecorderButton;
+import com.example.lenovopusher.PersonalActivity;
 import com.example.lenovopusher.R;
 
 import org.jivesoftware.smack.SmackException;
@@ -97,6 +98,11 @@ public class PublicChatFragment extends Fragment implements View.OnClickListener
         roomName="111";
         roomName= Config.roomName;
 
+
+        if(getActivity() instanceof PersonalActivity){
+        	roomName=UserInformation.getUsername();//如果是自己的直播间
+        }
+        	
         MyConnection.getInstance().createChatRoom(roomName, UserInformation.getUsername(),"");
         multiUserChat=MyConnection.getInstance().joinChatRoom(roomName,UserInformation.getUsername(),"");
 

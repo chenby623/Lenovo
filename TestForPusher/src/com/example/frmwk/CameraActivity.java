@@ -2,6 +2,7 @@ package com.example.frmwk;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.util.DisplayMetrics;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -12,7 +13,7 @@ import java.io.IOException;
 import com.example.lenovopusher.R;
 
 
-public abstract class CameraActivity extends Activity {
+public abstract class CameraActivity extends FragmentActivity {
     /** Used for controlling the camera. */
     private CameraManager mCameraManager;
 
@@ -36,7 +37,8 @@ public abstract class CameraActivity extends Activity {
         
         SurfaceView surfaceView = (SurfaceView) findViewById(R.id.surfaceview);
         SurfaceHolder surfaceHolder = surfaceView.getHolder();
-        surfaceView.setLayoutParams(new RelativeLayout.LayoutParams(metrics.widthPixels, metrics.heightPixels / 2)); 
+        //不用设置surfaceview的大小了，因为已经在xml中设置好了
+        //surfaceView.setLayoutParams(new RelativeLayout.LayoutParams(metrics.widthPixels, metrics.heightPixels / 2)); 
 
         if (mHasSurface) {
             initializeCamera(surfaceHolder);

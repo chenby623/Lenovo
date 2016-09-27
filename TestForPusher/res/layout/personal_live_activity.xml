@@ -5,23 +5,75 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--<VideoView-->
-        <!--android:id="@+id/video_view"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="200dp" />-->
-
-    <SurfaceView
-        android:id="@+id/surfaceview"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="100dp"
+        android:orientation="horizontal">
 
-    <include layout="@layout/live_tabs"/>
+        <SurfaceView
+            android:id="@+id/surfaceview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="2dp"/>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/live_viewpager"
+        <SurfaceView
+            android:id="@+id/surfaceview2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="4dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <SurfaceView
+            android:id="@+id/surfaceview3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"/>
+
+        <SurfaceView
+            android:id="@+id/surfaceview4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="4dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/take_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:text="开始录像"/>
+
+    <fragment
+        android:id="@+id/public_chat_fragment"
+        android:name="com.example.lenovopusher.fragment.PublicChatFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"></android.support.v4.view.ViewPager>
+        android:layout_weight="1"></fragment>
 </LinearLayout>
 
 
